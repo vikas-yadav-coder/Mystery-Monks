@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <!-- <h1>MysteryMonks</h1> -->
+            <img src="https://drhez8odc7m0y.cloudfront.net/wp-content/uploads/2019/09/Full-Res-Logo-300x60.png" alt="MysteryMonks" id="monks">
+            <div class="search-bar">
+                <a>Service</a>
+                <a>Portfolio</a>
+                <a>Textimonials</a>
+                <a>Contact</a>
+            </div>
+        </div>
+    </header>
+    <div class="add-form">
+        <div class="text">
+            <h1>Your business<br>
+                deserves a great<br>
+                Website.<br>
+            </h1>
+        </div>
+        <div class="text2">
+            <h1>We'll help you build one.</h1>
+        </div>
+        <div class="form">
+            <form action="/action.php">
+                <input type="text" placeholder="First Name*" id="one">
+                <input type="text" placeholder="Last Name*" id="two">
+                <br><br>
+                <input type="text" placeholder="Your Email Address*" id="three">
+                <br>
+                <br>
+                <input type="text" placeholder="Your Phone Number*" id="four">
+                <br><br>
+                <textarea type="text" placeholder="Tell us a bit about your requirement.*" rows="8" id="five"></textarea>
+                <br><br>
+                <button id="touch">Let's Talk</button>
+            </form>
+        </div>
+    </div>
+    <div class="clients">
+        <h1 id="our">Our Clients</h1>
+        <h1 id="business">Businesses we've helped so far...</h1>
+        <div class="logo">
+            <img src="data:image/png;base64,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" alt="adani" height="90px" id="aa">
+            <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2015-07/01/full/1435760470-3856.jpg?im=FeatureCrop,size=(826,465)" alt="Dr reddy" height="90px" id="bb">
+            <img src="https://www.bloorresearch.com/wp-content/uploads/2018/12/tibco-logo-x.png" alt="tibco" height="90px" id="cc">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzwjuOFuEuAGegear6OYSy-Zw2S5A9hAIHPQ&s" alt="mg" height="90px" id="dd">
+        </div>
+        <div class="logo2">
+            <img src="https://drhez8odc7m0y.cloudfront.net/wp-content/uploads/2023/06/reset-system-logo.png" alt="system" height="40px" id="ee">
+            <img src="https://drhez8odc7m0y.cloudfront.net/wp-content/uploads/2023/03/ollo.jpg-1.svg" alt="Bain" height="90px" id="ff">
+            <img src="https://drhez8odc7m0y.cloudfront.net/wp-content/uploads/2023/06/Zebion.png" alt="Zebion" height="50" id="gg">
+            <img src="https://drhez8odc7m0y.cloudfront.net/wp-content/uploads/2023/06/CricInvest_Logo.png" alt="Cric" height="50px" id="hh">
+        </div>
+    </div>
+    <div class="grow">
+        <h1>Grow your business with a great website.</h1>
+        <button id="bttn">Get Started  <i class="fa-solid fa-arrow-right" id="baba"></i></button>
+    </div>
+    <div class="india">
+        <h1><b>Made in India</b> and served to the world.</h1>
+        <h2>Choose from exciting pre-designed packages or let us help you customize.</h2>
+        <div class="company">
+            <div class="website">
+                <i class="fa-solid fa-bars"></i>
+                <h3>Company Profile<br>
+                Website</h3>
+                <p>Get a zero-maintenance <br>
+                website with a mobile-first <br>
+                design to take your digital <br>
+                presence to the next level</p>
+            </div>
+            <div class="ecommerce">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h3>eCommerce Website <br>
+                Development</h3>
+                <p>Get an online store to sell & <br> 
+                ship your products <br> 
+                everywhere.</p>
+            </div>
+            <div class="landing">
+                <i class="fa-solid fa-tv"></i>
+                <h3>Landing page <br>
+                development</h3>
+                <p>Get a landing page designed <br>
+                by experts to see your <br>
+                Conversion Rate skyrocket!</p>
+            </div>
+            <div class="custom">
+                <i class="fa-solid fa-earth-americas"></i>
+                <h3>Custom web
+                development</h3>
+                <p>Get creative, innovative, and <br>
+                customized solutions for web <br>
+                development.</p>
+            </div>
+        </div>
+    </div>
+    <div class="looking">
+        <h1>Looking for a website development agency that delivers great results?</h1>
+        <button id="bt">Let's Connect  <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+    <div class="port">
+        <h1>Portfolio</h1>
+        <h1 id="hi">We're proud of what our stellar web designers and developers do.</h1>
+        <div id="box1">
+            <div class="photo">
+                <img src="https://drhez8odc7m0y.cloudfront.net/wp-content/uploads/2024/04/Ace-Global-Website-Thumbnail.jpg" alt="image 1" height="370px" id="xx">
+                <img src="https://drhez8odc7m0y.cloudfront.net/wp-content/uploads/2022/09/1-1.jpg" alt="image2" height="370px" id="yy">
+                <img src="https://drhez8odc7m0y.cloudfront.net/wp-content/uploads/2024/01/VJ-Industries-Thumb.jpg" alt="image3" height="370px" id="zz">
+            </div>
+            <div class="word">
+                <h1 id="ace">Ace Global Asset <br>
+                   Management
+                </h1>
+                <h1 id="eco">iEcologicals</h1>
+                <h1 id="vj">VJ Industries</h1>
+            </div>
+        </div>
+        <div id="box2">
+            <div class="photo2">
+                <img src="https://drhez8odc7m0y.cloudfront.net/wp-content/uploads/2022/09/3.jpg" alt="img1" height="370px" id="pp">
+                <img src="https://drhez8odc7m0y.cloudfront.net/wp-content/uploads/2024/02/Shivali-Shamra-Website-Screenshot.jpg" alt="img2" height="370px" id="qq">
+                <img src="https://drhez8odc7m0y.cloudfront.net/wp-content/uploads/2022/09/4.jpg" alt="img3" height="370px" id="rr">
+            </div>
+            <div class="word2">
+                <h1 id="your">Your Workout Lab</h1>
+                <h1 id="ssu">Lawyer SSU</h1>
+                <h1 id="rose">Savage & Rose</h1>
+            </div>
+        </div>
+        <div id="box3">
+            <div class="photo3">
+                <img src="https://drhez8odc7m0y.cloudfront.net/wp-content/uploads/2022/09/Presto-portfolio-thumb.jpg" alt="all" height="370px" id="vv">
+                <img src="https://drhez8odc7m0y.cloudfront.net/wp-content/uploads/2022/09/rsz_durga-facility-thumb.jpg" alt="all2" height="370px" id="ii">
+                <img src="https://drhez8odc7m0y.cloudfront.net/wp-content/uploads/2022/09/5.jpg" alt="all3" height="370px" id="kk">
+            </div>
+            <div class="word3">
+                <h1 id="pre">Presto Bazaar</h1>
+                <h1 id="dur">Durga Facilities</h1>
+                <h1 id="del">Delivrd</h1>
+            </div>
+        </div>
+    </div>
+    <div class="excellent">
+        <h1>Excellent website design starts here</h1>
+        <button id="b4">let's Connect  <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+    <div class="sample">
+        <div class="no">
+            <div class="fuss">
+                <h1>No Fuss</h1>
+                <h1>No Frills</h1>
+            </div>
+            <p>________just Great Website Designs</p>
+            <div class="setting">
+                <img src="https://drhez8odc7m0y.cloudfront.net/wp-content/uploads/2022/10/zero.png" alt="wrench" height="70px">
+                <h1>Zero Maintenance</h1>
+            </div>
+            <div class="call">
+               <img src="https://drhez8odc7m0y.cloudfront.net/wp-content/uploads/2022/10/tech.png" alt="call" height="70px">
+               <h1>On Time Delivery</h1>
+            </div>
+            <div class="call-d">
+                <img src="https://drhez8odc7m0y.cloudfront.net/wp-content/uploads/2022/10/tech.png" alt="call" height="70px">
+                <h1>Dedicated Tech Manager</h1>
+            </div>
+            <div class="images">
+                <img src="https://drhez8odc7m0y.cloudfront.net/wp-content/uploads/2022/10/Graphics.png" alt="images" height="70px">
+                <h1>Premium Images & Graphics</h1>
+            </div>
+        </div>
+        <div class="cartoon">
+            <img src="https://drhez8odc7m0y.cloudfront.net/wp-content/uploads/2022/10/no-fuss.png" alt="cartoon" height="600px">
+        </div>
+   </div>
+   <div class="redesign">
+    <h1>Looking to redesign existing websites or custom web solutions?</h1>
+    <button id="btn">Click Here!  <i class="fa-solid fa-arrow-right"></i></button>
+   </div>
+   <div class="connect">
+       <div class="let">
+           <h1>Let's</h1>
+           <h1>Connect</h1>
+           <p>You never get a second chance to make that first <br><br>
+            impression.</p>
+       </div>
+       <div class="second-form">
+           <form action="/action.php">
+                <input type="text" placeholder="First Name*" id="vikas">
+                <input type="text" placeholder="Last Name*" id="yadav">
+                <br><br>
+                <input type="text" placeholder="Your Email Address*" id="email">
+                <br><br>
+                <input type="text" placeholder="Your Phone Number*" id="number">
+                <br><br>
+                <textarea placeholder="Tell us a bit about your requirement.*" rows="10" id="place"></textarea>
+           </form>
+           <button id="talk">Let's Talk</button>
+       </div>
+   </div>
+   <footer>
+        <div class="about">
+           <h1>About Us</h1>
+           <p>At Mystery Monks, we’ve always delivered solutions that serve a <br>
+              purpose, so whether it is an eCommerce website design, website <br>
+              development, animated and stock footage videos, or amazing landing <br>
+              pages…we keep leveraging our expertise to deliver results. <br>
+              Mystery Monks brings together a gamut of highly creative and <br>
+              committed professionals adept at professional communication. <br>
+              Making us the leading web development company in India.
+            </p>
+        </div>
+        <div class="doc">
+            <h1>Contact</h1>
+            <div class="email-id">
+                <i class="fa-solid fa-envelope"></i>
+                <p>sales@mysterymonks.com</p>
+            </div>
+            <div class="number-id">
+                <i class="fa-regular fa-clone"></i>
+                <p> +91 7710943835</p>
+            </div>
+        </div>
+   </footer>
+   <div class="last">
+        <hr>
+        <p>©2022, Mystery Monks Entertainment Pvt. Ltd.</p>
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
